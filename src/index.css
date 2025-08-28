@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+:root {
+	--clr-gold: #bc8e5b;
+}
+body {
+	background-color: #f1f0ee;
+}
+.ant-input-outlined:hover {
+	border-color: var(--clr-gold) !important;
+}
+.ant-input-outlined:focus-within {
+	border-color: var(--clr-gold) !important;
+	box-shadow: 0 0 0 2px rgba(188, 142, 91, 0.08) !important;
+}
+.logo-img {
+	animation-name: Logo;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+@keyframes Logo {
+	0% {
+		transform: scale(1) rotateY(0deg);
+	}
+	100% {
+		transform: scale(1.4) rotateY(360deg);
+	}
+}
