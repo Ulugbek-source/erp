@@ -19,7 +19,7 @@ const LoginForm: React.FC = () => {
 					setCookies('accessToken', res.data.accessToken)
 					location.pathname = '/'
 				},
-				autoClose: 2000,
+				autoClose: 1000,
 			})
 		})
 	}

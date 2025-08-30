@@ -1,7 +1,10 @@
 const PATH = {
 	home: '/',
 	login: '/sign-in',
-	groups: '/my-groups',
+	groups: '/groups',
+	teachers: '/teachers',
+	students: '/students',
+	stacks: '/stack',
 }
 
 export default PATH
