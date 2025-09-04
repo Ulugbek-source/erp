@@ -4,7 +4,8 @@ const PATH = {
 	groups: '/groups',
 	teachers: '/teachers',
 	students: '/students',
-	stacks: '/stack',
+	stacks: '/stacks',
+	stacksCreate: '/stacks/create',
 }
 
 export default PATH

@@ -1,6 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
 import { PATH } from '../components'
-import { DashboardHome, Groups, Stacks, Students, Teachers } from '../pages'
+import {
+	DashboardHome,
+	Groups,
+	Stacks,
+	StacksCreate,
+	Students,
+	Teachers,
+} from '../pages'
 import { Header, Navbar } from '../modules'
 import { useState } from 'react'
 
@@ -12,6 +19,7 @@ const DashboardRoutes = () => {
 		{ id: 3, path: PATH.teachers, element: <Teachers /> },
 		{ id: 3, path: PATH.students, element: <Students /> },
 		{ id: 5, path: PATH.home, element: <DashboardHome /> },
+		{ id: 6, path: PATH.stacksCreate, element: <StacksCreate /> },
 	]
 	return (
 		<div className='flex'>

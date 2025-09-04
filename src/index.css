@@ -4,6 +4,7 @@
 }
 body {
 	background-color: #f1f0ee;
+	overflow: hidden;
 }
 .ant-input-outlined:hover {
 	border-color: var(--clr-gold) !important;
@@ -31,4 +32,19 @@ body {
 }
 .navbar-menu > li {
 	padding: 25px !important;
+}
+.scrollbar-none::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollbar-none {
+	scrollbar-width: none;
+}
+
+.scrollbar-none {
+	-ms-overflow-style: none;
+}
+.ant-upload {
+	width: 400px !important;
+	height: 240px !important;
 }
