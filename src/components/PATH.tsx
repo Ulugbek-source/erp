@@ -6,6 +6,8 @@ const PATH = {
 	students: '/students',
 	stacks: '/stacks',
 	stacksCreate: '/stacks/create',
+	stacksUpdate: '/stacks/:id/update',
+	stacksMore: '/stacks/:id',
 }
 
 export default PATH

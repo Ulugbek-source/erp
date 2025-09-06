@@ -4,6 +4,7 @@ import DashboardHome from './dashboard/DashboardHome'
 import Groups from './dashboard/Groups'
 import Stacks from './dashboard/Stacks'
 import StacksCreate from './dashboard/StacksCreate'
+import StackMore from './dashboard/StackMore'
 import Teachers from './dashboard/Teachers'
 import Students from './dashboard/Students'
 
@@ -26,4 +27,5 @@ export {
 	Teachers,
 	Students,
 	StacksCreate,
+	StackMore,
 }

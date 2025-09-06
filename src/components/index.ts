@@ -4,6 +4,7 @@ import PageCaption from './PageCaption'
 import CreateCaption from './CreateCaption'
 import UploadFile from './UploadFile'
 import StackSkeleton from './skeleton/StackSkeleton'
+import CustomTable from './CustomTable'
 
 export {
 	PATH,
@@ -12,4 +13,5 @@ export {
 	CreateCaption,
 	UploadFile,
 	StackSkeleton,
+	CustomTable,
 }

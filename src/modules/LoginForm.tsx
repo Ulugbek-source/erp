@@ -6,6 +6,7 @@ import axios from 'axios'
 import { API } from '../hooks'
 import { useCookies } from 'react-cookie'
 import { toast } from 'react-toastify'
+import { PATH } from '../components'
 
 const LoginForm: React.FC = () => {
 	const [, setCookies] = useCookies(['accessToken'])
@@ -17,7 +18,7 @@ const LoginForm: React.FC = () => {
 				onClose: () => {
 					setIsLoading(false)
 					setCookies('accessToken', res.data.accessToken)
-					location.pathname = '/'
+					location.pathname = PATH.stacks
 				},
 				autoClose: 1000,
 			})

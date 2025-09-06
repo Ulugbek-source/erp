@@ -3,6 +3,7 @@ import { PATH } from '../components'
 import {
 	DashboardHome,
 	Groups,
+	StackMore,
 	Stacks,
 	StacksCreate,
 	Students,
@@ -20,6 +21,8 @@ const DashboardRoutes = () => {
 		{ id: 3, path: PATH.students, element: <Students /> },
 		{ id: 5, path: PATH.home, element: <DashboardHome /> },
 		{ id: 6, path: PATH.stacksCreate, element: <StacksCreate /> },
+		{ id: 7, path: PATH.stacksUpdate, element: <StacksCreate /> },
+		{ id: 8, path: PATH.stacksMore, element: <StackMore /> },
 	]
 	return (
 		<div className='flex'>
