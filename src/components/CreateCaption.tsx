@@ -1,6 +1,6 @@
 import { ArrowLeftOutlined, PlusCircleOutlined } from '@ant-design/icons'
 import { Button } from 'antd'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const CreateCaption = ({
 	title,
@@ -9,6 +9,7 @@ const CreateCaption = ({
 	title: string
 	isLoading: boolean
 }) => {
+	const { id } = useParams()
 	const navigate = useNavigate()
 	return (
 		<div className='flex items-center justify-between'>
@@ -20,7 +21,9 @@ const CreateCaption = ({
 				>
 					<ArrowLeftOutlined />
 				</button>
-				<h2 className='font-bold text-[25px]'>{title} qo'shish</h2>
+				<h2 className='font-bold text-[25px]'>
+					{title} {id ? 'tahrirlash' : "qo'shish"}
+				</h2>
 			</div>
 			<Button
 				loading={isLoading}

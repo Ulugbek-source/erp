@@ -2,6 +2,7 @@ import { lazy } from 'react'
 import LoginHome from './auth/LoginHome'
 import DashboardHome from './dashboard/DashboardHome'
 import Groups from './dashboard/Groups'
+import GroupCreate from './dashboard/GroupCreate'
 import Stacks from './dashboard/Stacks'
 import StacksCreate from './dashboard/StacksCreate'
 import StackMore from './dashboard/StackMore'
@@ -23,6 +24,7 @@ export {
 	LoginHome,
 	DashboardHome,
 	Groups,
+	GroupCreate,
 	Stacks,
 	Teachers,
 	Students,

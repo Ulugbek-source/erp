@@ -25,9 +25,10 @@ const StackMore = () => {
 			})
 	}, [id])
 	//
+	const [groupsLoading, setGroupsLoading] = useState<boolean>(true)
 	const [stackGroups, setStackGroups] = useState([])
 	const column = [
-		{ title: 'ID', dataIndex: 'id ' },
+		{ title: 'ID', dataIndex: 'key' },
 		{ title: 'Guruh nomi', dataIndex: 'name' },
 		{ title: 'Xona', dataIndex: 'roomName' },
 		{ title: "Yo'nalish", dataIndex: 'stackName' },
@@ -52,6 +53,7 @@ const StackMore = () => {
 						return item
 					})
 				)
+				setGroupsLoading(false)
 			})
 	}, [id])
 	// Delete part
@@ -139,7 +141,11 @@ const StackMore = () => {
 				/>
 			</div>
 			<div className='mt-[30px]'>
-				<CustomTable columns={column} data={stackGroups} />
+				<CustomTable
+					loading={groupsLoading}
+					columns={column}
+					data={stackGroups}
+				/>
 			</div>
 
 			<Modal

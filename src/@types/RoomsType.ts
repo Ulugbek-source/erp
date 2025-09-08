@@ -1,7 +1,7 @@
-export interface StackType {
+export interface RoomsType {
 	id: number
+	numberId: number
 	name: string
-	image: string
 	createdAt: string
 	label?: string
 	value?: number

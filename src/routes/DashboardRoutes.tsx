@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import { PATH } from '../components'
 import {
 	DashboardHome,
+	GroupCreate,
 	Groups,
 	StackMore,
 	Stacks,
@@ -23,6 +24,7 @@ const DashboardRoutes = () => {
 		{ id: 6, path: PATH.stacksCreate, element: <StacksCreate /> },
 		{ id: 7, path: PATH.stacksUpdate, element: <StacksCreate /> },
 		{ id: 8, path: PATH.stacksMore, element: <StackMore /> },
+		{ id: 9, path: PATH.groupsCreate, element: <GroupCreate /> },
 	]
 	return (
 		<div className='flex'>
