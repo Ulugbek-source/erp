@@ -1,13 +1,18 @@
 import { lazy } from 'react'
 import LoginHome from './auth/LoginHome'
 import DashboardHome from './dashboard/DashboardHome'
-import Groups from './dashboard/Groups'
-import GroupCreate from './dashboard/GroupCreate'
-import Stacks from './dashboard/Stacks'
-import StacksCreate from './dashboard/StacksCreate'
-import StackMore from './dashboard/StackMore'
-import Teachers from './dashboard/Teachers'
-import Students from './dashboard/Students'
+import Groups from './dashboard/groups/Groups'
+import GroupCreate from './dashboard/groups/GroupCreate'
+import GroupMore from './dashboard/groups/GroupMore'
+import Stacks from './dashboard/stacks/Stacks'
+import StacksCreate from './dashboard/stacks/StacksCreate'
+import StackMore from './dashboard/stacks/StackMore'
+import Teachers from './dashboard/teachers/Teachers'
+import TeacherCreate from './dashboard/teachers/TeacherCreate'
+import TeachersMore from './dashboard/teachers/TeachersMore'
+import Students from './dashboard/students/Students'
+import StudentsCreate from './dashboard/students/StudentsCreate'
+import StudentsMore from './dashboard/students/StudentsMore'
 
 const Login = lazy(
 	() =>
@@ -25,9 +30,14 @@ export {
 	DashboardHome,
 	Groups,
 	GroupCreate,
+	GroupMore,
 	Stacks,
 	Teachers,
+	TeacherCreate,
+	TeachersMore,
 	Students,
+	StudentsCreate,
+	StudentsMore,
 	StacksCreate,
 	StackMore,
 }

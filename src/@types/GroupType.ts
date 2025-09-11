@@ -23,4 +23,6 @@ export interface GroupsType {
 	roomName?: string
 	stackName?: string
 	action: ReactNode
+	label?: string
+	value?: number
 }

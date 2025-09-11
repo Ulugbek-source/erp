@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { API, instance } from '../../hooks'
-import type { StackType } from '../../@types/StackType'
+import { API, instance } from '../../../hooks'
+import type { StackType } from '../../../@types/StackType'
 import {
 	ArrowLeftOutlined,
 	DeleteFilled,
@@ -10,8 +10,8 @@ import {
 } from '@ant-design/icons'
 import { Button, Modal } from 'antd'
 import { toast } from 'react-toastify'
-import { CustomTable } from '../../components'
-import type { GroupsType } from '../../@types/GroupType'
+import { CustomTable } from '../../../components'
+import type { GroupsType } from '../../../@types/GroupType'
 
 const StackMore = () => {
 	const { id } = useParams()
@@ -150,13 +150,13 @@ const StackMore = () => {
 
 			<Modal
 				cancelText='Yo‘q'
-				okText='Ha, o‘chir'
+				okText='Ha'
 				okButtonProps={{ type: 'primary', className: '!bg-[#bc8e5b]' }}
 				confirmLoading={deleteLoading}
 				open={showModal}
 				onCancel={() => setShowModal(false)}
 				onOk={handleDeleteStack}
-				title={'O‘chirish tasdiqlansin!'}
+				title={'O‘chirish'}
 			>
 				<p>Haqiqatan ham ushbu stackni o‘chirib tashlamoqchimisiz? 🚨</p>
 			</Modal>

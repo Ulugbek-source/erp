@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { PageCaption, StackSkeleton } from '../../components'
-import { API, instance } from '../../hooks'
+import { PageCaption, StackSkeleton } from '../../../components'
+import { API, instance } from '../../../hooks'
 import { Card } from 'antd'
-import type { StackType } from '../../@types/StackType'
+import type { StackType } from '../../../@types/StackType'
 import { useNavigate } from 'react-router-dom'
 
 const { Meta } = Card

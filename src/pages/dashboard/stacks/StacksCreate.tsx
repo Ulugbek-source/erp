@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent } from 'react'
-import { CreateCaption, UploadFile } from '../../components'
+import { CreateCaption, UploadFile } from '../../../components'
 import { Input } from 'antd'
-import { API, instance } from '../../hooks'
+import { API, instance } from '../../../hooks'
 import { toast } from 'react-toastify'
 import { useNavigate, useParams } from 'react-router-dom'
 
@@ -21,7 +21,7 @@ const StacksCreate = () => {
 					setImage(`${API}/file/${res.data.image}`)
 				})
 		}
-	}, [])
+	}, [id])
 	function handleCreateStack(e: FormEvent<HTMLFormElement>) {
 		setIsLoading(true)
 		e.preventDefault()
@@ -56,7 +56,10 @@ const StacksCreate = () => {
 		}
 	}
 	return (
-		<form onSubmit={handleCreateStack} className='p-5'>
+		<form
+			onSubmit={handleCreateStack}
+			className='p-5 overflow-y-auto h-[100vh]'
+		>
 			<CreateCaption isLoading={isLoading} title="Yo'nalish" />
 			<div className='mt-[30px]'>
 				<UploadFile image={image} setImage={setImage} />

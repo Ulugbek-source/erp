@@ -1,10 +1,10 @@
 import { Input, Select } from 'antd'
-import { CreateCaption } from '../../components'
+import { CreateCaption } from '../../../components'
 import { useEffect, useState, type FormEvent } from 'react'
-import { instance } from '../../hooks'
-import type { StackType } from '../../@types/StackType'
-import type { RoomsType } from '../../@types/RoomsType'
-import type { TeacherType } from '../../@types/TeacherType'
+import { instance } from '../../../hooks'
+import type { StackType } from '../../../@types/StackType'
+import type { RoomsType } from '../../../@types/RoomsType'
+import type { TeacherType } from '../../../@types/TeacherType'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
@@ -119,8 +119,10 @@ const GroupCreate = () => {
 	}
 	return (
 		<form onSubmit={handleCreateGroup} autoComplete='off' className='p-5'>
-			<CreateCaption title='Guruh' isLoading={loading} />
-			<div className='flex justify-between mt-8'>
+			<div className='p-5 bg-white rounded-md'>
+				<CreateCaption title='Guruh' isLoading={loading} />
+			</div>
+			<div className='flex justify-between mt-8 bg-white p-5 rounded-md'>
 				<div className='w-[45%] flex flex-col gap-5'>
 					<Select
 						onChange={e => setStackId(e)}

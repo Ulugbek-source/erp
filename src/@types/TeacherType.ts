@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react'
+
 export interface TeacherType {
 	id: string
 	name: string
@@ -43,4 +45,8 @@ export interface TeacherType {
 	]
 	label?: string
 	value?: string
+	key?: number
+	stackName?: string
+	statusName?: string
+	action?: ReactNode
 }

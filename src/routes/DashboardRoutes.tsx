@@ -3,12 +3,17 @@ import { PATH } from '../components'
 import {
 	DashboardHome,
 	GroupCreate,
+	GroupMore,
 	Groups,
 	StackMore,
 	Stacks,
 	StacksCreate,
 	Students,
+	StudentsCreate,
+	StudentsMore,
+	TeacherCreate,
 	Teachers,
+	TeachersMore,
 } from '../pages'
 import { Header, Navbar } from '../modules'
 import { useState } from 'react'
@@ -25,6 +30,13 @@ const DashboardRoutes = () => {
 		{ id: 7, path: PATH.stacksUpdate, element: <StacksCreate /> },
 		{ id: 8, path: PATH.stacksMore, element: <StackMore /> },
 		{ id: 9, path: PATH.groupsCreate, element: <GroupCreate /> },
+		{ id: 10, path: PATH.teachersCreate, element: <TeacherCreate /> },
+		{ id: 11, path: PATH.teachersUpdate, element: <TeacherCreate /> },
+		{ id: 12, path: PATH.teachersMore, element: <TeachersMore /> },
+		{ id: 13, path: PATH.studentsCreate, element: <StudentsCreate /> },
+		{ id: 14, path: PATH.studentsUpdate, element: <StudentsCreate /> },
+		{ id: 15, path: PATH.studentsMore, element: <StudentsMore /> },
+		{ id: 16, path: PATH.groupsMore, element: <GroupMore /> },
 	]
 	return (
 		<div className='flex'>
