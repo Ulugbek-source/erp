@@ -90,12 +90,11 @@ const StudentCreate = () => {
 			email,
 			status: status === 'true',
 		}
-		console.log(data)
 		if (id) {
 			instance()
 				.patch(`/students/${id}`, data)
 				.then(() => {
-					toast.success('Talaba yangilandi!', {
+					toast.success('Oquvchi yangilandi!', {
 						onClose: () => {
 							setLoading(false)
 							navigate(-1)
@@ -108,7 +107,7 @@ const StudentCreate = () => {
 			instance()
 				.post('/students', data)
 				.then(() => {
-					toast.success("Talaba qo'shildi!", {
+					toast.success("Oquvchi qo'shildi!", {
 						onClose: () => {
 							setLoading(false)
 							navigate(-1)
@@ -127,7 +126,10 @@ const StudentCreate = () => {
 			className='p-5 overflow-y-auto h-[100vh] scrollbar-none'
 		>
 			<div className='p-5 bg-white rounded-md'>
-				<CreateCaption isLoading={loading} title={id ? 'Talabani' : 'Talaba'} />
+				<CreateCaption
+					isLoading={loading}
+					title={id ? 'Oquvchini' : 'Oquvchi'}
+				/>
 			</div>
 			<div className='flex mt-5 mb-[70px] justify-between p-8 bg-white rounded-md'>
 				<div className='w-[45%] flex flex-col gap-5'>

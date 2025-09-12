@@ -37,6 +37,7 @@ const DashboardRoutes = () => {
 		{ id: 14, path: PATH.studentsUpdate, element: <StudentsCreate /> },
 		{ id: 15, path: PATH.studentsMore, element: <StudentsMore /> },
 		{ id: 16, path: PATH.groupsMore, element: <GroupMore /> },
+		{ id: 17, path: PATH.groupsUpdate, element: <GroupCreate /> },
 	]
 	return (
 		<div className='flex'>

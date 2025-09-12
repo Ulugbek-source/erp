@@ -96,8 +96,11 @@ const GroupMore = () => {
 						<p className='text-[22px] capitalize'>{groupData?.name}</p>
 					</li>
 					<li>
-						<span className='text-slate-400'>Tavsif</span>
-						<p className='text-[22px]'>{groupData?.createdAt}</p>
+						<span className='text-slate-400'>Yaratilgan sana</span>
+						<p className='text-[22px]'>
+							{groupData?.createdAt.split('T')[0]} &&{' '}
+							{groupData?.createdAt?.split('T')[1].split('.')[0]}
+						</p>
 					</li>
 				</ul>
 			</div>

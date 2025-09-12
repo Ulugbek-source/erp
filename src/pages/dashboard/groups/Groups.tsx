@@ -21,9 +21,6 @@ const Groups = () => {
 	const [teachers, setTeachers] = useState<{ label: string; value: string }[]>(
 		[]
 	)
-	const handleMore = (id: number) => {
-		navigate(`/groups/${id}`)
-	}
 	const [stacks, setStacks] = useState<{ label: string; value: string }[]>([])
 	// Search part
 	const [loading, setLoading] = useState<boolean>(true)
@@ -66,7 +63,7 @@ const Groups = () => {
 						item.stackName = item.stack.name
 						item.action = (
 							<Button
-								onClick={() => handleMore(item.id)}
+								onClick={() => navigate(`/groups/${item.id}`)}
 								size='large'
 								icon={<MoreOutlined />}
 								type='text'
